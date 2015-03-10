@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Baby Tracker</title>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+		<script type="text/javascript" src="js/timeline.js"></script>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<ul>
+					<li><img src="logo.png" /></li>
+					<li>Tracker</li>
+					<li>Profile</li>
+					<li>Share</li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<h1>Baby Harrison's Routine</h1>
+			<section id="timeline">
+			</section>
+		</main>
+		<section class="all-forms">
+			<section class="form-section">
+				<div class="title">
+					<h2>Add a Poo<div class="corner plus"></div></h2>
+				</div>
+				<form action="/api/waste" method="post" id="poo">
+					<label>Time <input name="pooTime" id="pooTime" type="time" required /></label>
+					<label>Date <input name="pooDate" id="pooDate" type="date" required /></label>
+					<label>Blowout <input name="pooBlow" id="pooBlow" type="checkbox" value="true" /></label>
+					<label>Firmness <select name="pooFirm" id="pooFirm">
+										<option value="1">Solid</option>
+										<option value="2">Soft</option>
+										<option value="3">Wet</option>
+									</select>
+					</label>
+					<label>Color <input name="pooColor" id="pooColor" type="color" required /></label>
+					<label>Picture <input name="pooPicture" id="pooPicture" type="file" accept=".jpg,.png" /></label>
+					<button class="submitBtn">Submit</button>
+				</form>
+			</section>
+			<section class="form-section">
+				<div class="title">
+					<h2>Add a Pee<div class="corner plus"></div></h2>
+				</div>
+				<form action="/api/waste" method="post" id="pee">
+					<label>Time <input name="peeTime" type="time" required /></label>
+					<label>Date <input name="peeDate" type="date" required /></label>
+					<label>Color <input name="peeColor" type="color" /></label>
+					<button class="submitBtn">Submit</button>
+				</form>
+			</section>
+			<section class="form-section">
+				<div class="title">
+					<h2>Add a Feeding<div class="corner plus"></div></h2>
+				</div>
+				<form action="js/addfeeding.js" method="post">
+					<label>Time <input name="feed-time" type="time" required /></label>
+					<label>Date <input name="feed-date" type="date" required /></label>
+					<label>Duration (Minutes) <input name="feed-duration" type="number" required /></label>
+					<input class="submit" type="submit" />
+				</form>
+			</section>
+		</section>
+		<footer>
+		</footer>
+		<script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
+		<script type="text/javascript" src="js/actions.js"></script>
+		<script type="text/javascript" src="js/forms.js"></script>
+	</body>
+</html>
