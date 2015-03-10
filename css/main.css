@@ -1,0 +1,112 @@
+/*
+
+COLOR PALETTE
+Mauve			#B2768F
+Skin			#FFDBEA
+Soft Pink		#FFC1DB
+Green			#64B268
+Light Green		#C1FFC5
+
+*/
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+.footer {
+  position: absolute;
+  color: #fff;
+  bottom: 0;
+  width: 100%;
+  background-color: #333;
+}
+
+body {
+	background: #fff url(/img/stitch-wool-bg.jpg) repeat top left;
+	margin-bottom: 142px;
+}
+
+.navbar {
+	border-bottom: 1px solid #64b268;
+}
+
+.jumbotron {
+	background: url(/img/ever/ever-jumbo.jpg) no-repeat center center;
+	background-size: 100%;
+	color: #fff;
+	padding: 0;
+	margin-top: 15px;
+	-moz-box-shadow: inset 0 10px 10px -10px #000000, inset 0 -10px 10px -10px #000000;
+	-webkit-box-shadow: inset 0 10px 10px -10px #000000, inset 0 -10px 10px -10px #000000;
+	box-shadow: inset 0 10px 10px -10px #000000, inset 0 -10px 10px -10px #000000;
+}
+
+.advertisement {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.btn-primary {
+	background-color: #b2768f;
+	border-color: #b2768f;
+}
+
+.btn-primary:hover {
+	background-color: #784f60;
+	border-color: #784f60;
+}
+
+.btn-primary:active {
+	background-color: #784f60;
+	border-color: #b2768f;
+}
+
+.btn-info {
+	background-color: #ffd8ea;
+	color: #000;
+	border-color: #ffd8ea;
+}
+
+.btn-info:hover {
+	background-color: #ffc1db;
+	color: #000;
+	border-color: #ffd8ea;
+}
+
+.btn-info:active {
+	background-color: #ffc1db;
+	color: #000;
+	border-color: #ffd8ea;
+}
+
+.features .glyphicon {
+	font-size: 30px;
+	color: #64b268;
+}
+
+.navbar {
+	margin-bottom: 0;
+}
+
+.cta-section {
+	background-color: rgba(0,0,0,0.5);
+	padding-top: 48px;
+	padding-bottom: 48px;
+}
+
+.well {
+	margin-bottom: 0;
+}
+
+.footer a {
+	color: #ffd8ea;
+}
+
+.footer a:hover {
+	color: #ffc1db;
+}
+
+.footer a:active {
+	color: #ffc1db;
+};
