@@ -28,15 +28,15 @@ $('#poo').on('click','button',function(event) {
 		dataType: "json",
 		error: errorHandling,
 		timeout: 30000,
-		data: {	
-				"wasteTime": $('#pooDate').val() + "T" + $('#pooTime').val() + ":00",
-				"blowout": Boolean($('#pooBlow').val()),
-				"color": $('#pooColor').val(),
-				"coordinates": crds,
-				"firmnessTypeId": $('#pooFirm').val(),
-				"createdBy": null,
-				"wasteType": "poo",
-				"changer": null
+		data: {
+			"wasteTime": $('#pooDate').val() + "T" + $('#pooTime').val() + ":00",
+			"blowout": Boolean($('#pooBlow').val()),
+			"color": $('#pooColor').val(),
+			"coordinates": crds,
+			"firmnessTypeId": $('#pooFirm').val(),
+			"createdBy": null,
+			"wasteType": "poo",
+			"changer": null
 		},
 		contentType: "application/json",
 		success: function(){ alert("Poo added successfully!"); }
@@ -47,11 +47,12 @@ $('#poo').on('click','button',function(event) {
 $('#pee').on('click','button',function(event) {
 	event.preventDefault();
 	$.ajax($('#pee').attr('action'),{
-		type: $('#poo').attr('method'),
+		type: $('#pee').attr('method'),
 		dataType: "json",
 		error: errorHandling,
 		timeout: 30000,
-		data: {	
+		data:
+			JSON.stringify({
 				"wasteTime": $('#peeDate').val() + "T" + $('#peeTime').val() + ":00",
 				"blowout": false,
 				"color": $('#peeColor').val(),
@@ -60,7 +61,7 @@ $('#pee').on('click','button',function(event) {
 				"createdBy": null,
 				"wasteType": "pee",
 				"changer": null
-		},
+			}),
 		contentType: "application/json",
 		success: function(){ alert("Pee added successfully!"); }
 	});

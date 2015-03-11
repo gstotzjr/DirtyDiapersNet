@@ -29,17 +29,18 @@
 					<h2>Add a Poo<div class="corner plus"></div></h2>
 				</div>
 				<form action="/api/waste" method="post" id="poo">
-					<label>Time <input name="pooTime" id="pooTime" type="time" required /></label>
-					<label>Date <input name="pooDate" id="pooDate" type="date" required /></label>
-					<label>Blowout <input name="pooBlow" id="pooBlow" type="checkbox" value="true" /></label>
-					<label>Firmness <select name="pooFirm" id="pooFirm">
-										<option value="1">Solid</option>
-										<option value="2">Soft</option>
-										<option value="3">Wet</option>
-									</select>
-					</label>
-					<label>Color <input name="pooColor" id="pooColor" type="color" required /></label>
-					<label>Picture <input name="pooPicture" id="pooPicture" type="file" accept=".jpg,.png" /></label>
+					<label for="pooTime">Time</label>&nbsp;<input name="pooTime" id="pooTime" type="time" required />
+					<label for="pooDate">Date</label>&nbsp;<input name="pooDate" id="pooDate" type="date" required />
+					<label for="pooBlow">Blowout</label>&nbsp;<input name="pooBlow" id="pooBlow" type="checkbox" value="true" />
+					<label for="pooFirm">Firmness</label>
+					<select name="pooFirm" id="pooFirm">
+						<option value="diahrea">Diahrea</option>
+						<option value="soft">Soft</option>
+						<option value="firm">Firm</option>
+						<option value="hard">Hard</option>
+					</select>
+					<label for="pooColor">Color</label>&nbsp;<input name="pooColor" id="pooColor" type="color" required />
+					<label for="pooPicture">Picture</label>&nbsp;<input name="pooPicture" id="pooPicture" type="file" accept=".jpg,.png" />
 					<button class="submitBtn">Submit</button>
 				</form>
 			</section>
@@ -48,9 +49,9 @@
 					<h2>Add a Pee<div class="corner plus"></div></h2>
 				</div>
 				<form action="/api/waste" method="post" id="pee">
-					<label>Time <input name="peeTime" type="time" required /></label>
-					<label>Date <input name="peeDate" type="date" required /></label>
-					<label>Color <input name="peeColor" type="color" /></label>
+					<label for="peeTime">Time</label>&nbsp;<input name="peeTime" id="peeTime" type="time" required />
+					<label for="peeDate">Date</label>&nbsp;<input name="peeDate" id="peeDate" type="date" required />
+					<label for="peeColor">Color</label>&nbsp;<input name="peeColor" id="peeColor" type="color" />
 					<button class="submitBtn">Submit</button>
 				</form>
 			</section>
